@@ -19,6 +19,6 @@ export default `
   </div>
   <p class="about__description--bottom bottom__description">Lorem ipsum dolor sit amet, consectetur adipisicing
     elit. Molestiae atque suscipit magnam nam, ipsa quos impedit debitis esse velit eaque placeat autem.</p>
-  <button class="btn about__button">Check our menu</button>
+  <button class="btn about__btn">Check our menu</button>
 </div>
 `

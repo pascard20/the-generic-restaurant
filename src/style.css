@@ -276,10 +276,10 @@ main {
 }
 
 .bottom {
-  height: 95rem;
+  height: 100rem;
   overflow: hidden;
   width: 100%;
-  padding: 2rem 8rem;
+  padding: 4rem 8rem;
   font-size: 1.7rem;
 }
 
@@ -413,7 +413,6 @@ main {
   .about__crew-names {
     display: flex;
     justify-content: space-around;
-    /* font-size: 1.7rem; */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -440,7 +439,7 @@ main {
     object-position: center 70%;
   }
 
-  .about__button {
+  .about__btn {
     margin-top: -2rem;
   }
 }
