@@ -269,7 +269,6 @@ nav {
 }
 
 main {
-  height: 200vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -277,8 +276,11 @@ main {
 }
 
 .bottom {
-  height: 100vh;
+  height: 95rem;
   overflow: hidden;
+  width: 100%;
+  padding: 2rem 8rem;
+  font-size: 1.7rem;
 }
 
 .bottom__title {
@@ -316,13 +318,13 @@ main {
 
 .menu {
   width: 100%;
-  padding: 4rem;
-  max-width: 1280px;
+  max-width: 105rem;
+  margin: 0 auto;
 
   .menu__wrapper {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, max(280px, 100%/4)), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, max(200px, 100%/4)), 1fr));
     gap: 4rem;
   }
 
@@ -372,6 +374,125 @@ main {
   .menu__btn {
     margin: 0 auto;
     margin-top: 5rem;
+  }
+}
+
+/* ---------------------------------- ABOUT --------------------------------- */
+
+.about {
+  .about__img-wrapper {
+    max-width: 700px;
+    aspect-ratio: 7/4;
+    margin: -2rem auto 6rem;
+    margin-top: -2rem;
+    position: relative;
+    /* overflow: hidden; */
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, .7) 0%, transparent 80%);
+      opacity: 0;
+      transition: .6s;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &:hover .about__crew-names {
+      transform: translateY(0);
+    }
+  }
+
+  .about__crew-names {
+    display: flex;
+    justify-content: space-around;
+    /* font-size: 1.7rem; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding-bottom: 3rem;
+    color: white;
+    letter-spacing: .03em;
+    transform: translateY(100%);
+    transition: .6s;
+
+    li {
+      text-align: center;
+      width: 0;
+      flex-grow: 1;
+    }
+  }
+
+  .about__crew-names--title {
+    font-weight: 600;
+  }
+
+  img {
+    object-position: center 70%;
+  }
+
+  .about__button {
+    margin-top: -2rem;
+  }
+}
+
+/* --------------------------------- CONTACT -------------------------------- */
+
+.contact {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+
+
+  .contact__input {
+    font: inherit;
+    font-size: .85em;
+    width: 100%;
+    padding: .5em;
+    border-radius: .4rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    margin-bottom: 1.5rem;
+
+    &:focus {
+      outline: none;
+      border-color: rgba(0, 0, 0, .9)
+    }
+  }
+
+  .contact__label {
+    display: block;
+    margin-bottom: .3rem;
+  }
+
+  .contact__btn {
+    margin-top: 1rem;
+    font-size: .95em;
+  }
+
+  .contact__title {
+    grid-column: span 2;
+  }
+
+  .contact__hours {
+    margin-top: 2.5rem;
+  }
+
+  .contact__subtitle {
+    font-size: 1.25em;
+    letter-spacing: .01em;
   }
 }
 
@@ -455,70 +576,6 @@ footer {
     }
   }
 
-}
-
-/* ---------------------------------- ABOUT --------------------------------- */
-
-.about {
-  .about__img-wrapper {
-    max-width: 800px;
-    aspect-ratio: 7/4;
-    margin: -2rem auto 6rem;
-    margin-top: -2rem;
-    position: relative;
-    /* overflow: hidden; */
-
-    &::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-image: linear-gradient(to top, rgba(0, 0, 0, .7) 0%, transparent 80%);
-      opacity: 0;
-      transition: .6s;
-    }
-
-    &:hover::after {
-      opacity: 1;
-    }
-
-    &:hover .about__crew-names {
-      transform: translateY(0);
-    }
-  }
-
-  .about__crew-names {
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.7rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    padding-bottom: 3rem;
-    color: white;
-    letter-spacing: .03em;
-    transform: translateY(100%);
-    transition: .6s;
-
-    li {
-      text-align: center;
-      width: 0;
-      flex-grow: 1;
-    }
-  }
-
-  .about__crew-names--title {
-    font-weight: 600;
-  }
-
-  img {
-    object-position: center 70%;
-  }
 }
 
 /* --------------------------------- BUTTON --------------------------------- */
