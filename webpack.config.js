@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const htmlPath = "./src/template.html"
-const jsPath = "./src/index.js"
+const jsPath = "./src/main.js"
 
 module.exports = {
   mode: "development",
