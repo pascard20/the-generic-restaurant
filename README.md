@@ -1,9 +1,9 @@
 # The Generic Restaurant
 by **Łukasz Pasternak**
 
-A dynamic, single-page restaurant website developed using JavaScript, CSS, and Webpack. This project demonstrates modular JavaScript, dynamic content loading, and modern web development practices.
+A dynamic, single-page restaurant website. This project demonstrates modular JavaScript and dynamic content loading.
 
-[View Demo](https://pascard20.github.io/odin-09-restaurant/)
+[View Demo](https://pascard20.github.io/the-generic-restaurant/)
 
 ## Technologies Used
 
